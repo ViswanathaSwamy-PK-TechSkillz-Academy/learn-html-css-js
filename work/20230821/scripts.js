@@ -1,5 +1,3 @@
-alert('Hello from JS File!');
-
 // Log number
 console.log(100);
 
