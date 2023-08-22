@@ -1,6 +1,15 @@
 // Ways to declare a variable
 // `var`, `let`, & `const`
 
+/*
+Multi-line comment
+console.log(100);
+
+console.log('Hello World');
+
+console.log(20, 'Hello', true);
+*/
+
 let firstName = 'John';
 const lastName = 'Doe';
 let age = 30;
