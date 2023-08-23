@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
-    background: linear-gradient(to bottom, lightgreen, lightblue);
+    background: linear-gradient(to bottom, lightgreen, rgb(1, 106, 141));
     display: flex;
     min-height: 100vh;
     justify-content: center;
@@ -52,7 +52,6 @@ h2 {
     border-radius: 5px;
     background-color: black;
     color: aliceblue;
-
 }
 
 .btn:hover {
