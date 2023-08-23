@@ -14,13 +14,24 @@ body {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    width: 50%;
+    width: 90%;
     margin: 10px;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    /* Align children side by side */
+    /* justify-content: center; */
+    align-items: center;
+    /* min-height: 100vh; */
+    /* background: linear-gradient(to bottom, lightgreen, rgb(1, 106, 141)); */
+    text-align: center;
 }
 
 h2 {
