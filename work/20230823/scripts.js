@@ -1,41 +1,65 @@
 // String
 const firstName = 'Sara';
 
+display(firstName);
+
 // Number
 const age = 30;
 const temp = 98.9;
 
+display(age);
+display(temp);
+
 // Boolean
 const hasKids = true;
+
+display(hasKids);
 
 // Null
 const aptNumber = null;
 
+display(aptNumber);
+
 // Undefined
-// let score;
-const score = undefined;
+let score;
+
+display(score);
+
+const scorev1 = undefined;
+
+display(scorev1);
 
 // Symbol
 const id = Symbol('id');
 
+display(id);
+
 // BigInt
 const n = 9007199254740991n;
+
+display(n);
 
 // Reference Types
 
 const numbers = [1, 2, 3, 4];
 
+display(numbers);
+
 const person = {
     name: 'Brad',
 };
+
+display(person);
 
 function sayHello() {
     console.log('Hello');
 }
 
-const output = sayHello;
+display(sayHello);
 
-console.log(output, typeof output);
+function display(output) {
+    console.log('Data: ', output, 'Type Of: ', typeof output);
+}
 
 // More info on why typeof null == object
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#typeof_null
