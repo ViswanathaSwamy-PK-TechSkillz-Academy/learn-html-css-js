@@ -1,63 +1,52 @@
 // String
 const firstName = 'Sara';
-
-display(firstName);
+displayDataAndType(firstName);
 
 // Number
 const age = 30;
-const temp = 98.9;
+displayDataAndType(age);
 
-display(age);
-display(temp);
+const price = 98.9;
+displayDataAndType(price);
 
 // Boolean
 const hasKids = true;
-
-display(hasKids);
+displayDataAndType(hasKids);
 
 // Null
 const aptNumber = null;
-
-display(aptNumber);
+displayDataAndType(aptNumber);
 
 // Undefined
 let score;
-
-display(score);
+displayDataAndType(score);
 
 const scorev1 = undefined;
-
-display(scorev1);
+displayDataAndType(scorev1);
 
 // Symbol
 const id = Symbol('id');
-
-display(id);
+displayDataAndType(id);
 
 // BigInt
 const n = 9007199254740991n;
-
-display(n);
+displayDataAndType(n);
 
 // Reference Types
-
 const numbers = [1, 2, 3, 4];
-
-display(numbers);
+displayDataAndType(numbers);
 
 const person = {
     name: 'Brad',
 };
-
-display(person);
+displayDataAndType(person);
 
 function sayHello() {
     console.log('Hello');
 }
+displayDataAndType(sayHello);
 
-display(sayHello);
-
-function display(output) {
+function displayDataAndType(output) {
     console.log('Data: ', output, 'Type Of: ', typeof output);
 }
 
