@@ -1,5 +1,3 @@
-export { }
-
 // JS types:
 let fistName = 'John';
 let isAdmin = false;
@@ -14,7 +12,7 @@ let work = () => {
     console.log('working...')
 }
 
-let salary = 50n;
+let salary = 50n; // BigInt
 let logo = Symbol('emerald')
 
 let all = [fistName, isAdmin, age, car, bicycle, duties, work, salary, logo];
