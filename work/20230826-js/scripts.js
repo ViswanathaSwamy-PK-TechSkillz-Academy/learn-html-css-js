@@ -1,57 +1,21 @@
-// String
-const firstName = 'Sara';
-displayDataAndType(firstName);
-
-// Number
+// Value is stored in the stack
+const personName = 'John';
 const age = 30;
-displayDataAndType(age);
 
-const price = 98.9;
-displayDataAndType(price);
+let personNewName = personName;
+console.log(personName, personNewName); // John, John
 
-// Boolean
-const hasKids = true;
-displayDataAndType(hasKids);
+personNewName = 'Jonathan';
+console.log(personName, personNewName); // John, Jonathan
 
-// Null
-const aptNumber = null;
-displayDataAndType(aptNumber);
-
-// Undefined
-let score;
-displayDataAndType(score);
-
-const scorev1 = undefined;
-displayDataAndType(scorev1);
-
-// Symbol
-const id = Symbol('id');
-displayDataAndType(id);
-
-// BigInt
-const n = 9007199254740991n;
-displayDataAndType(n);
-
-// Reference Types
-const numbers = [1, 2, 3, 4];
-displayDataAndType(numbers);
-
+// Reference is stored in the heap
 const person = {
     name: 'Brad',
+    age: 40,
 };
-displayDataAndType(person);
 
-function sayHello() {
-    console.log('Hello');
-}
-displayDataAndType(sayHello);
+let newPerson = person;
+console.log(person, newPerson); // { name: 'Brad', age: 40 }, { name: 'Brad', age: 40 }
 
-function displayDataAndType(output) {
-    console.log('Data: ', output, 'Type Of: ', typeof output);
-}
-
-// More info on why typeof null == object
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#typeof_null
-
-//  More info on the "function object" type
-// https://262.ecma-international.org/5.1/#sec-11.4.3
+newPerson.name = 'Bradley';
+console.log(person, newPerson); // { name: 'Bradley', age: 40 }, { name: 'Bradley', age: 40 }
