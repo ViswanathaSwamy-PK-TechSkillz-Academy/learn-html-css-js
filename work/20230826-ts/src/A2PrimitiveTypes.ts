@@ -1,4 +1,4 @@
-// JS types:
+// JS types: string | boolean | number | null | undefined | object | function | symbol | bigint
 let fistName = 'John';
 let isAdmin = false;
 let age = 30;

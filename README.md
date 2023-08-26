@@ -14,6 +14,10 @@ npm install -g typescript
 
 tsc -v
 tsc --init
+
+ts-node .\src\A2PrimitiveTypes.ts
+
+tsc
 ```
 
 ```bash
