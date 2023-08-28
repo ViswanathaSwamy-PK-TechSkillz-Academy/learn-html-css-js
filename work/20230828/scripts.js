@@ -1,43 +1,88 @@
-let amount = '100';
-showStringToNumberConversion(amount);
+let output = '100';
+showStringToNumberConversion(output);
 
-amount = 'hello';
-showStringToNumberConversion(amount);
+output = 'hello';
+showStringToNumberConversion(output);
 
-// Convert number to string
-amount = amount.toString();
-amount = String(amount);
+output = 100;
+showNumberToString(output);
 
-// Convert string to decimal
-amount = parseFloat(amount);
+output = '99.99';
+showStringToDecimalConversion(output);
+
+// We can have -1, 0, 1
+num1 = 10;
+showNumberToBooleanConversion(num1);
+
+num1 = 0;
+showNumberToBooleanConversion(num1);
+
+num1 = -125;
+showNumberToBooleanConversion(num1);
+
+// // Ways to get NaN
+// console.log(Math.sqrt(-1));
+// console.log(1 + NaN);
+// console.log(undefined + undefined);
+// console.log('foo' / 3);
+
+// console.log(amount, typeof amount);
 
 // Convert number to boolean
-amount = Boolean(amount);
+function showNumberToBooleanConversion(numberToConvert) {
+    console.group('Number to Boolean Conversion');
 
-// Ways to get NaN
-console.log(Math.sqrt(-1));
-console.log(1 + NaN);
-console.log(undefined + undefined);
-console.log('foo' / 3);
+    displayDataAndType(numberToConvert);
 
-console.log(amount, typeof amount);
+    output = Boolean(numberToConvert);
+    displayDataAndType(output);
 
-// Convert String to Number
+    console.groupEnd();
+}
+
+// Convert string to decimal
+function showStringToDecimalConversion(stringToConvert) {
+    console.group('String to Decimal Conversion');
+
+    displayDataAndType(stringToConvert);
+
+    output = parseFloat(stringToConvert);
+    displayDataAndType(output);
+
+    console.groupEnd();
+}
+
+// Convert number to string
+function showNumberToString(numberToConvert) {
+    console.group('Number to String Conversion');
+
+    displayDataAndType(numberToConvert);
+
+    output = numberToConvert.toString();
+    displayDataAndType(output);
+
+    output = String(numberToConvert);
+    displayDataAndType(output);
+
+    console.groupEnd();
+}
+
+// Convert String to Number. Convert string to number in 3 ways
 function showStringToNumberConversion(stringToConvert) {
 
     console.group('String to Number Conversion');
 
     displayDataAndType(stringToConvert);
 
-    // Convert string to number in 3 ways
-    amount = parseInt(stringToConvert);
-    displayDataAndType(amount);
 
-    amount = +stringToConvert;
-    displayDataAndType(amount);
+    output = parseInt(stringToConvert);
+    displayDataAndType(output);
 
-    amount = Number(stringToConvert);
-    displayDataAndType(amount);
+    output = +stringToConvert;
+    displayDataAndType(output);
+
+    output = Number(stringToConvert);
+    displayDataAndType(output);
 
     console.groupEnd();
 }
