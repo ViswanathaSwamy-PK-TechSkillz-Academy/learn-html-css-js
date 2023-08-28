@@ -22,9 +22,11 @@ console.log('foo' / 3);
 
 console.log(amount, typeof amount);
 
+// Convert String to Number
 function showStringToNumberConversion(stringToConvert) {
 
     console.group('String to Number Conversion');
+
     displayDataAndType(stringToConvert);
 
     // Convert string to number in 3 ways
