@@ -1,9 +1,8 @@
-let amount = 'hello';
+let amount = '100';
+showStringToNumberConversion(amount);
 
-// Convert string to number
-amount = parseInt(amount);
-amount = +amount;
-amount = Number(amount);
+amount = 'hello';
+showStringToNumberConversion(amount);
 
 // Convert number to string
 amount = amount.toString();
@@ -22,3 +21,25 @@ console.log(undefined + undefined);
 console.log('foo' / 3);
 
 console.log(amount, typeof amount);
+
+function showStringToNumberConversion(stringToConvert) {
+
+    console.group('String to Number Conversion');
+    displayDataAndType(stringToConvert);
+
+    // Convert string to number in 3 ways
+    amount = parseInt(stringToConvert);
+    displayDataAndType(amount);
+
+    amount = +stringToConvert;
+    displayDataAndType(amount);
+
+    amount = Number(stringToConvert);
+    displayDataAndType(amount);
+
+    console.groupEnd();
+}
+
+function displayDataAndType(itemToDispaly) {
+    console.log('Data: ', itemToDispaly, 'Type Of: ', typeof itemToDispaly);
+}
