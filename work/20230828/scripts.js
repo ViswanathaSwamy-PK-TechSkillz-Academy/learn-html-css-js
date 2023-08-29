@@ -69,11 +69,9 @@ function showNumberToString(numberToConvert) {
 
 // Convert String to Number. Convert string to number in 3 ways
 function showStringToNumberConversion(stringToConvert) {
-
     console.group('String to Number Conversion');
 
     displayDataAndType(stringToConvert);
-
 
     output = parseInt(stringToConvert);
     displayDataAndType(output);
