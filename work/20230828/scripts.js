@@ -1,9 +1,6 @@
 let output = '100';
 showStringToNumberConversion(output);
 
-output = 'hello';
-showStringToNumberConversion(output);
-
 output = 100;
 showNumberToString(output);
 
@@ -20,13 +17,13 @@ showNumberToBooleanConversion(num1);
 num1 = -125;
 showNumberToBooleanConversion(num1);
 
-// // Ways to get NaN
-// console.log(Math.sqrt(-1));
-// console.log(1 + NaN);
-// console.log(undefined + undefined);
-// console.log('foo' / 3);
-
-// console.log(amount, typeof amount);
+// Ways to get NaN
+output = 'hello';
+showStringToNumberConversion(output);
+console.log("Math.sqrt(-1) :", Math.sqrt(-1));
+console.log("1 + NaN :", 1 + NaN);
+console.log("undefined + undefined :", undefined + undefined);
+console.log("'foo' / 3 :", 'foo' / 3);
 
 // Convert number to boolean
 function showNumberToBooleanConversion(numberToConvert) {
