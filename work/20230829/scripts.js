@@ -1,92 +1,57 @@
-let output = '100';
-showStringToNumberConversion(output);
+// 1. Arithmetic Operators
 
-output = 'hello';
-showStringToNumberConversion(output);
+let x;
 
-output = 100;
-showNumberToString(output);
+x = 5 + 5;
+x = 5 - 5;
+x = 5 * 5;
+x = 5 / 5;
+x = 7 % 5;
 
-output = '99.99';
-showStringToDecimalConversion(output);
+// Concatenation
+x = 'Hello' + ' ' + 'World';
 
-// We can have -1, 0, 1
-num1 = 10;
-showNumberToBooleanConversion(num1);
+// Exponent
+x = 2 ** 3;
 
-num1 = 0;
-showNumberToBooleanConversion(num1);
+// Increment
+x = 1;
+// x = x + 1;
+x++;
 
-num1 = -125;
-showNumberToBooleanConversion(num1);
+// Decrement
+// x = x - 1;
+x--;
 
-// // Ways to get NaN
-// console.log(Math.sqrt(-1));
-// console.log(1 + NaN);
-// console.log(undefined + undefined);
-// console.log('foo' / 3);
+// 2. Assignment Operators
 
-// console.log(amount, typeof amount);
+x = 10;
 
-// Convert number to boolean
-function showNumberToBooleanConversion(numberToConvert) {
-    console.group('Number to Boolean Conversion');
+x += 5;
+x -= 5;
+x *= 5;
+x /= 5;
+x %= 5;
+x **= 5;
 
-    displayDataAndType(numberToConvert);
+// 3. Comparison Operators
 
-    output = Boolean(numberToConvert);
-    displayDataAndType(output);
+// Equal to (Just the value, not the type)
+x = 2 == '2';
 
-    console.groupEnd();
-}
+// Equal to (Type and value)
+x = 2 === '2';
 
-// Convert string to decimal
-function showStringToDecimalConversion(stringToConvert) {
-    console.group('String to Decimal Conversion');
+// Not equal to (Just the value, not the type)
+x = 2 != '2';
 
-    displayDataAndType(stringToConvert);
+// Not equal to (Type and value)
+x = 2 !== 2;
 
-    output = parseFloat(stringToConvert);
-    displayDataAndType(output);
+// Greater than and less than
+x = 10 > 5;
+x = 10 < 5;
+x = 10 <= 5;
+x = 10 >= 5;
 
-    console.groupEnd();
-}
-
-// Convert number to string
-function showNumberToString(numberToConvert) {
-    console.group('Number to String Conversion');
-
-    displayDataAndType(numberToConvert);
-
-    output = numberToConvert.toString();
-    displayDataAndType(output);
-
-    output = String(numberToConvert);
-    displayDataAndType(output);
-
-    console.groupEnd();
-}
-
-// Convert String to Number. Convert string to number in 3 ways
-function showStringToNumberConversion(stringToConvert) {
-
-    console.group('String to Number Conversion');
-
-    displayDataAndType(stringToConvert);
-
-
-    output = parseInt(stringToConvert);
-    displayDataAndType(output);
-
-    output = +stringToConvert;
-    displayDataAndType(output);
-
-    output = Number(stringToConvert);
-    displayDataAndType(output);
-
-    console.groupEnd();
-}
-
-function displayDataAndType(itemToDispaly) {
-    console.log('Data: ', itemToDispaly, 'Type Of: ', typeof itemToDispaly);
-}
+console.log(x);
