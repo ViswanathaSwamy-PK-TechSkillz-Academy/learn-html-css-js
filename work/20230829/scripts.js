@@ -30,12 +30,16 @@ displayDataAndType(x, 'x = 2 ** 3');
 x = 1;
 displayDataAndType(x, 'x = 1');
 
-// x = x + 1;
+x = x + 1;
+displayDataAndType(x, 'x = x + 1');
+
 x++;
 displayDataAndType(x, 'x++');
 
 // Decrement
-// x = x - 1;
+x = x - 1;
+displayDataAndType(x, 'x = x - 1');
+
 x--;
 displayDataAndType(x, 'x--');
 
