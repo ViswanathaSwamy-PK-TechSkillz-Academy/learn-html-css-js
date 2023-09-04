@@ -81,6 +81,10 @@ x = 2 != '2';
 displayDataAndType(x, 'x = 2 != "2"');
 
 // Not equal to (Type and value)
+x = 2 !== '2';
+displayDataAndType(x, 'x = 2 !== "2"');
+
+// Not equal to (Type and value)
 x = 2 !== 2;
 displayDataAndType(x, 'x = 2 !== 2');
 
