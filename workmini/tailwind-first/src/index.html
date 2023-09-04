@@ -9,6 +9,49 @@
   <script defer src="./assets/fontawesome/js/fontawesome.min.js"></script>
   <link rel="icon" href="./assets/icons/favicon.ico" />
   <title>Tailwind CSS Application</title>
+
+  <script>
+    window.onload = () => {
+      const mobileMenuIcon = document.getElementById("mobile-menu-button");
+      mobileMenuIcon.addEventListener("click", () => {
+        if (mobileMenuIcon.classList.contains("open")) {
+          mobileMenuIcon.classList.remove("open");
+        } else {
+          mobileMenuIcon.classList.add("open");
+        }
+      });
+
+      // const ticketsMenuItem = document.getElementById("ticket-menu-item");
+      // ticketsMenuItem.addEventListener("click", () => {
+      //   if (ticketsMenuItem.classList.contains("open")) {
+      //     ticketsMenuItem.classList.remove("open");
+      //   } else {
+      //     ticketsMenuItem.classList.add("open");
+      //   }
+      // });
+
+      // const darkModeToggle = document.getElementById("dark-mode-toggle");
+      // darkModeToggle.addEventListener("click", () => {
+      //   if (document.body.classList.contains("dark")) {
+      //     document.body.classList.remove("dark");
+      //   } else {
+      //     document.body.classList.add("dark");
+      //   }
+      // });
+
+      // const previousButton = document.getElementById("previous");
+      // const nextButton = document.getElementById("next");
+      // const carousel = document.getElementById("carousel");
+      // previousButton.addEventListener("click", () => {
+      //   const itemWidth = carousel.getElementsByTagName("div")[0].clientWidth;
+      //   carousel.scrollLeft = carousel.scrollLeft - itemWidth;
+      // });
+      // nextButton.addEventListener("click", () => {
+      //   const itemWidth = carousel.getElementsByTagName("div")[0].clientWidth;
+      //   carousel.scrollLeft = carousel.scrollLeft + itemWidth;
+      // });
+    };
+  </script>
 </head>
 
 <body>
@@ -19,15 +62,23 @@
         <div class="flex items-center p-1 gap-1">
           <img src="./assets/images/logo-inverted.png" alt="logo" width="40" />
           <div class="font-bold text-2xl">
-            tw:<span>mf</span>
+            tw:<span class="text-fuchsia-800">mf</span>
           </div>
         </div>
 
         <div class="block md:hidden ml-auto pr-4 my-auto cursor-pointer">
-          <div>
-            <div class="bg-zinc-200 rounded-full w-8 h-1 mt-1"></div>
-            <div class="bg-zinc-200 rounded-full w-8 h-1 mt-1"></div>
-            <div class="bg-zinc-200 rounded-full w-8 h-1 mt-1"></div>
+          <div id="mobile-menu-button" class="group peer">
+            <div class="bg-zinc-200 rounded-full w-8 h-1 group-open:rotate-45 transition-all group-open:top-2 relative">
+            </div>
+            <div class="bg-zinc-200 rounded-full w-8 h-1 mt-1 opacity-100 group-open:opacity-0 transition-all"></div>
+            <div
+              class="bg-zinc-200 rounded-full w-8 h-1 mt-1 group-open:-rotate-45 transition-all group-open:-top-2 relative">
+            </div>
+          </div>
+
+          <div
+            class="absolute top-[45px] bg-gradient-to-r from-blue-500 to-blue-900 w-full left-0 peer-open:block hidden">
+            Mobile Menu
           </div>
         </div>
 
