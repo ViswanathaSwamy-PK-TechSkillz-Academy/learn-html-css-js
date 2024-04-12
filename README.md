@@ -12,7 +12,7 @@ I am Learning HTML, CSS, and JavaScript from different video courses, books, and
 > 1. <https://fontawesome.com/search?q=apple&o=r>
 > 1. <https://favicon.io/emoji-favicons/dizzy>
 > 1. <https://colorhunt.co/>
-> 1. <https://fonts.googleapis.com>
+> 1. <https://fonts.google.com/>
 
 ## TypeScript Related Resources
 
