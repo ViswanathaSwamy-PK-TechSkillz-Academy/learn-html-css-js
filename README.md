@@ -8,6 +8,10 @@ I am Learning HTML, CSS, and JavaScript from different video courses, books, and
 > 1. [https://developer.mozilla.org/en-US/](https://developer.mozilla.org/en-US/)
 > 1. <https://docs.emmet.io/cheat-sheet/>
 > 1. <https://code.visualstudio.com/docs/editor/emmet>
+> 1. <https://cdnjs.com/libraries/font-awesome>
+> 1. <https://fontawesome.com/search?q=apple&o=r>
+> 1. <https://favicon.io/emoji-favicons/dizzy>
+> 1. <https://colorhunt.co/>
 
 ## TypeScript Related Resources
 
