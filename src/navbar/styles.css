@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: #f1f5f8;
+  background: #F0EBE3;
   line-height: 2.2;
   font-size: 0.875rem;
 }
@@ -24,8 +24,8 @@ a {
 }
 
 nav {
-  background: white;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background: #F6F5F2;
+  box-shadow: 0 5px 15px #634b01;
 }
 
 .fa-bars {
@@ -39,7 +39,9 @@ nav {
 }
 
 .menu a {
-  color: grey;
+  color: #074173;
+  font-weight: bolder;
+  font-size: 1.2rem;
   letter-spacing: 0.1rem;
   display: block;
   padding: 0.5rem 1rem;
@@ -48,7 +50,7 @@ nav {
 
 .menu a:hover {
   background: #f8a5a5;
-  color: #e94949;
+  color: #5BBCFF;
   padding-left: 1.5rem;
 }
 
@@ -69,6 +71,23 @@ nav {
   padding: 1rem;
 }
 
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #1C1678;
+}
+
+i {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  color: blueviolet;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+}
+
 @media (min-width: 800px) {
   .nav-main {
     max-width: 1170px;
@@ -76,7 +95,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: .2rem;
   }
 
   .nav-header {
