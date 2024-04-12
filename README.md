@@ -13,6 +13,7 @@ I am Learning HTML, CSS, and JavaScript from different video courses, books, and
 > 1. <https://favicon.io/emoji-favicons/dizzy>
 > 1. <https://colorhunt.co/>
 > 1. <https://fonts.google.com/>
+> 1. <https://svglogomaker.com/>
 
 ## TypeScript Related Resources
 
