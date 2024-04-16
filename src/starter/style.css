@@ -6,6 +6,7 @@
 }
 
 body {
+    background-color: aliceblue;
     font-family: 'Roboto', 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
@@ -25,5 +26,5 @@ h1 {
 i {
     font-size: 5rem;
     margin-bottom: 1rem;
-    color: blueviolet;
+    color: #49243E;
 }
