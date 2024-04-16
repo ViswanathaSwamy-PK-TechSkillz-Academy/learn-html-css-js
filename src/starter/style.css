@@ -6,6 +6,7 @@
 }
 
 body {
+    background-color: aliceblue;
     font-family: 'Roboto', 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
