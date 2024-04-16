@@ -10,9 +10,19 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: #f8f8f6;
+  /* background: #f8f8f6; */
   line-height: 2.2;
   font-size: 0.875rem;
+}
+
+banner-div {
+  margin-top: .7rem;
+}
+
+#banner2{
+  height: 400px;
+  /* margin-top: 4rem; */
+  width: 100%;
 }
 
 ul {
@@ -78,9 +88,8 @@ h1 {
 }
 
 i {
-  font-size: 5rem;
-  margin-bottom: 1rem;
-  color: #8e6b03;
+  font-size: 3rem;
+  color: #1e8cfa;
 }
 
 div {
@@ -90,12 +99,12 @@ div {
 
 @media (min-width: 800px) {
   .nav-main {
-    max-width: 1170px;
-    margin: 0 auto;
+    max-width: 95%;
+    margin: 0 .2rem 0 .2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: .2rem;
+    /* padding: .2rem; */
   }
 
   .nav-header {
