@@ -10,14 +10,18 @@ body {
     /* Black */
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
 header {
-    background-color: #8B4513;
+    /* background-color: #8B4513; */
+    background-color: #322C2B;
     /* Saddle Brown */
     color: #FFFFFF;
     /* White */
     padding: 5px;
+    /* box-shadow: 0 5px 5px  #8B4513; */
+    box-shadow: 0 2px 0 2px #c1c1c0;
 }
 
 header h1 {
@@ -67,16 +71,33 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: #4B0082;
+    /* background-color: #4B0082; */
+    background-color: #E4C59E;
     /* Indigo */
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
+    color: #803D3B;
     /* White */
-    text-align: center;
-    padding: 10px;
+    text-align: left;
+    padding: 5px;
+    margin-top: 165px;
 }
 
 banner-div {
     margin-top: .6rem;
+    position: relative;
+}
+
+.image-credit {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    /* Adjust as needed */
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Adjust background color and opacity */
+    padding: 5px;
+    /* Adjust padding as needed */
+    margin: 0;
+    /* Remove any default margin */
 }
 
 #banner1 {
