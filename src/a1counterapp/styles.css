@@ -101,7 +101,7 @@ div {
 }
 
 .count {
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 .buttons button {
@@ -114,6 +114,7 @@ div {
   outline: none;
   border-radius: 3px;
   cursor: pointer;
+  box-shadow: 2px 2px 5px #000;
 }
 
 button.subtract {
