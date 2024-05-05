@@ -19,5 +19,5 @@ loginBtn.addEventListener("click", () => {
         ? (loginBtn.textContent = "Sign Up") && (contactBtn.textContent = "Log In") &&
         (loginMsg.textContent = "Don't have an account?") && (loginHeader.textContent = "Welcome Back")
         : (loginBtn.textContent = "Log In") && (contactBtn.textContent = "Create Account") &&
-        (loginMsg.textContent = "Already have an account?") && (contactBtn.textContent = "Create New Account");
+        (loginMsg.textContent = "Already have an account?") && (loginHeader.textContent = "Create New Account");
 });
