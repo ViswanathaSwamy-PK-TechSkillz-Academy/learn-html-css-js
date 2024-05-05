@@ -168,3 +168,50 @@ html {
     background-color: #BB8493;
     border: 0.2rem solid #f5dd54;
 }
+
+.input-group i {
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    color: #ccc;
+}
+
+.btn-group {
+    width: 40rem;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.contact-btn {
+    width: 46%;
+    height: 100%;
+    border-radius: 4rem;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-btn:nth-child(1) {
+    background-color: #BB8493;
+}
+
+.contact-btn:nth-child(2) {
+    background-color: #FFC94A;
+}
+
+.logo-bottom {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: #FFC94A;
+    box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.3);
+}
