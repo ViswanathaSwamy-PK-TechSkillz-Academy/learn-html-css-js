@@ -3,6 +3,7 @@ const joinBtn = document.querySelector(".navigation a:nth-child(3)");
 const homeBtn = document.querySelector(".navigation a:nth-child(2)");
 const loginBtn = document.querySelector(".contact p a");
 const loginMsg = document.querySelector(".contact p span");
+const loginHeader = document.querySelector(".contact h1");
 const contactBtn = document.querySelector(".contact-btn:nth-child(2)");
 
 joinBtn.addEventListener("click", () => {
@@ -15,6 +16,8 @@ homeBtn.addEventListener("click", () => {
 
 loginBtn.addEventListener("click", () => {
     container.classList.toggle("hide")
-        ? (loginBtn.textContent = "Sign Up") && (contactBtn.textContent = "Log In") && (loginMsg.textContent = "Don't have an account?")
-        : (loginBtn.textContent = "Log In") && (contactBtn.textContent = "Create Account") && (loginMsg.textContent = "Already have an account?");
+        ? (loginBtn.textContent = "Sign Up") && (contactBtn.textContent = "Log In") &&
+        (loginMsg.textContent = "Don't have an account?") && (loginHeader.textContent = "Welcome Back")
+        : (loginBtn.textContent = "Log In") && (contactBtn.textContent = "Create Account") &&
+        (loginMsg.textContent = "Already have an account?") && (contactBtn.textContent = "Create New Account");
 });
