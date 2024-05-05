@@ -16,7 +16,7 @@ html {
 .container {
     width: 100%;
     height: 100vh;
-    background-color: #704264;
+    background-color: #BB8493;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,4 +143,23 @@ html {
 
 .contact p a {
     color: #1d90f5;
+}
+
+.input-group {
+    width: 40rem;
+    height: 4.5rem;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    height: 100%;
+    background-color: #704264;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 1rem 2rem;
+    color: #ccc;
+    font-size: 1.4rem;
+    /* transition: opacity 0.5s; */
 }
