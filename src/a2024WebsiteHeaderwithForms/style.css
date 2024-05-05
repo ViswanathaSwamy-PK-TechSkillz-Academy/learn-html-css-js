@@ -163,3 +163,8 @@ html {
     font-size: 1.4rem;
     /* transition: opacity 0.5s; */
 }
+
+.input-group input:focus {
+    background-color: #BB8493;
+    border: 0.2rem solid #f5dd54;
+}
