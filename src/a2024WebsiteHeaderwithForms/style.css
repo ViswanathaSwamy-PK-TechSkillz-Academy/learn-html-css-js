@@ -85,7 +85,6 @@ html {
     top: 30%;
     left: 5%;
     transition: all 0.5s 0.5s;
-    display: none;
 }
 
 .change .banner {
@@ -115,9 +114,15 @@ html {
     position: absolute;
     top: 25%;
     left: 5%;
-    /* opacity: 0; */
-    /* visibility: hidden; */
+    opacity: 0;
+    visibility: hidden;
     transition: all 0.5s;
+}
+
+.change .contact {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s 0.5s;
 }
 
 .contact h3 {
@@ -161,7 +166,11 @@ html {
     padding: 1rem 2rem;
     color: #ccc;
     font-size: 1.4rem;
-    /* transition: opacity 0.5s; */
+}
+
+.hide .input-group:nth-child(1),
+.hide .input-group:nth-child(2) {
+    display: none;
 }
 
 .input-group input:focus {
